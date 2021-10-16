@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		79E60CE8271B2DBB0064DD2F /* Gestione_ContabileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60CE7271B2DBB0064DD2F /* Gestione_ContabileApp.swift */; };
-		79E60CEA271B2DBB0064DD2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60CE9271B2DBB0064DD2F /* ContentView.swift */; };
 		79E60CEC271B2DBE0064DD2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E60CEB271B2DBE0064DD2F /* Assets.xcassets */; };
 		79E60CEF271B2DBE0064DD2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E60CEE271B2DBE0064DD2F /* Preview Assets.xcassets */; };
 		79E60CF1271B2DBE0064DD2F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60CF0271B2DBE0064DD2F /* Persistence.swift */; };
@@ -16,6 +15,7 @@
 		79E60CFE271B2DBE0064DD2F /* Gestione_ContabileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60CFD271B2DBE0064DD2F /* Gestione_ContabileTests.swift */; };
 		79E60D08271B2DBE0064DD2F /* Gestione_ContabileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D07271B2DBE0064DD2F /* Gestione_ContabileUITests.swift */; };
 		79E60D0A271B2DBE0064DD2F /* Gestione_ContabileUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D09271B2DBE0064DD2F /* Gestione_ContabileUITestsLaunchTests.swift */; };
+		79E60D17271B31940064DD2F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D16271B31940064DD2F /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 /* Begin PBXFileReference section */
 		79E60CE4271B2DBB0064DD2F /* Gestione Contabile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gestione Contabile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E60CE7271B2DBB0064DD2F /* Gestione_ContabileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gestione_ContabileApp.swift; sourceTree = "<group>"; };
-		79E60CE9271B2DBB0064DD2F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		79E60CEB271B2DBE0064DD2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79E60CEE271B2DBE0064DD2F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		79E60CF0271B2DBE0064DD2F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -48,6 +47,7 @@
 		79E60D03271B2DBE0064DD2F /* Gestione ContabileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gestione ContabileUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E60D07271B2DBE0064DD2F /* Gestione_ContabileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gestione_ContabileUITests.swift; sourceTree = "<group>"; };
 		79E60D09271B2DBE0064DD2F /* Gestione_ContabileUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gestione_ContabileUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		79E60D16271B31940064DD2F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				79E60CE7271B2DBB0064DD2F /* Gestione_ContabileApp.swift */,
-				79E60CE9271B2DBB0064DD2F /* ContentView.swift */,
+				79E60D16271B31940064DD2F /* MainView.swift */,
 				79E60CEB271B2DBE0064DD2F /* Assets.xcassets */,
 				79E60CF0271B2DBE0064DD2F /* Persistence.swift */,
 				79E60CF2271B2DBE0064DD2F /* Gestione_Contabile.xcdatamodeld */,
@@ -264,8 +264,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				79E60CF1271B2DBE0064DD2F /* Persistence.swift in Sources */,
+				79E60D17271B31940064DD2F /* MainView.swift in Sources */,
 				79E60CF4271B2DBE0064DD2F /* Gestione_Contabile.xcdatamodeld in Sources */,
-				79E60CEA271B2DBB0064DD2F /* ContentView.swift in Sources */,
 				79E60CE8271B2DBB0064DD2F /* Gestione_ContabileApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
