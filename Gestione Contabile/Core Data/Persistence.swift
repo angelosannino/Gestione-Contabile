@@ -1,10 +1,3 @@
-//
-//  Persistence.swift
-//  Gestione Contabile
-//
-//  Created by Angelo Sannino on 16/10/21.
-//
-
 import CoreData
 
 struct PersistenceController {

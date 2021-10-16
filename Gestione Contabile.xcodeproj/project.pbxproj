@@ -16,6 +16,7 @@
 		79E60D08271B2DBE0064DD2F /* Gestione_ContabileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D07271B2DBE0064DD2F /* Gestione_ContabileUITests.swift */; };
 		79E60D0A271B2DBE0064DD2F /* Gestione_ContabileUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D09271B2DBE0064DD2F /* Gestione_ContabileUITestsLaunchTests.swift */; };
 		79E60D17271B31940064DD2F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D16271B31940064DD2F /* MainView.swift */; };
+		79E60D23271B84240064DD2F /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D22271B84240064DD2F /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		79E60D07271B2DBE0064DD2F /* Gestione_ContabileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gestione_ContabileUITests.swift; sourceTree = "<group>"; };
 		79E60D09271B2DBE0064DD2F /* Gestione_ContabileUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gestione_ContabileUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		79E60D16271B31940064DD2F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		79E60D22271B84240064DD2F /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +101,13 @@
 			isa = PBXGroup;
 			children = (
 				79E60CE7271B2DBB0064DD2F /* Gestione_ContabileApp.swift */,
-				79E60D16271B31940064DD2F /* MainView.swift */,
+				79E60D18271B837C0064DD2F /* Views */,
+				79E60D19271B838A0064DD2F /* ViewModels */,
+				79E60D1A271B83940064DD2F /* Models */,
+				79E60D1B271B83A00064DD2F /* Services */,
+				79E60D1D271B83BD0064DD2F /* Protocols */,
+				79E60D1C271B83A90064DD2F /* Core Data */,
 				79E60CEB271B2DBE0064DD2F /* Assets.xcassets */,
-				79E60CF0271B2DBE0064DD2F /* Persistence.swift */,
 				79E60CF2271B2DBE0064DD2F /* Gestione_Contabile.xcdatamodeld */,
 				79E60CED271B2DBE0064DD2F /* Preview Content */,
 			);
@@ -131,6 +137,51 @@
 				79E60D09271B2DBE0064DD2F /* Gestione_ContabileUITestsLaunchTests.swift */,
 			);
 			path = "Gestione ContabileUITests";
+			sourceTree = "<group>";
+		};
+		79E60D18271B837C0064DD2F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				79E60D16271B31940064DD2F /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		79E60D19271B838A0064DD2F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				79E60D22271B84240064DD2F /* MainViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		79E60D1A271B83940064DD2F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		79E60D1B271B83A00064DD2F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		79E60D1C271B83A90064DD2F /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				79E60CF0271B2DBE0064DD2F /* Persistence.swift */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		79E60D1D271B83BD0064DD2F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79E60D23271B84240064DD2F /* MainViewModel.swift in Sources */,
 				79E60CF1271B2DBE0064DD2F /* Persistence.swift in Sources */,
 				79E60D17271B31940064DD2F /* MainView.swift in Sources */,
 				79E60CF4271B2DBE0064DD2F /* Gestione_Contabile.xcdatamodeld in Sources */,

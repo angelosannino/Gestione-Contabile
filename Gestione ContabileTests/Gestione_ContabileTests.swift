@@ -1,10 +1,3 @@
-//
-//  Gestione_ContabileTests.swift
-//  Gestione ContabileTests
-//
-//  Created by Angelo Sannino on 16/10/21.
-//
-
 import XCTest
 @testable import Gestione_Contabile
 

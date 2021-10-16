@@ -1,13 +1,9 @@
-//
-//  MainView.swift
-//  Gestione Contabile
-//
-//  Created by Angelo Sannino on 16/10/21.
-//
-
 import SwiftUI
 
 struct MainView: View {
+    
+    @StateObject var viewModel = MainViewModel()
+    
     var body: some View {
         Text("Hello, World!")
     }

@@ -1,10 +1,3 @@
-//
-//  Gestione_ContabileApp.swift
-//  Gestione Contabile
-//
-//  Created by Angelo Sannino on 16/10/21.
-//
-
 import SwiftUI
 
 @main

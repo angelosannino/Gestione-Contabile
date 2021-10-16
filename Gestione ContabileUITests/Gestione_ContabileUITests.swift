@@ -1,10 +1,3 @@
-//
-//  Gestione_ContabileUITests.swift
-//  Gestione ContabileUITests
-//
-//  Created by Angelo Sannino on 16/10/21.
-//
-
 import XCTest
 
 class Gestione_ContabileUITests: XCTestCase {
