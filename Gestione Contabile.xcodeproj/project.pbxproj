@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79E60CE8271B2DBB0064DD2F /* Gestione_ContabileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60CE7271B2DBB0064DD2F /* Gestione_ContabileApp.swift */; };
+		79E60CEA271B2DBB0064DD2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60CE9271B2DBB0064DD2F /* ContentView.swift */; };
+		79E60CEC271B2DBE0064DD2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E60CEB271B2DBE0064DD2F /* Assets.xcassets */; };
+		79E60CEF271B2DBE0064DD2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E60CEE271B2DBE0064DD2F /* Preview Assets.xcassets */; };
+		79E60CF1271B2DBE0064DD2F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60CF0271B2DBE0064DD2F /* Persistence.swift */; };
+		79E60CF4271B2DBE0064DD2F /* Gestione_Contabile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79E60CF2271B2DBE0064DD2F /* Gestione_Contabile.xcdatamodeld */; };
+		79E60CFE271B2DBE0064DD2F /* Gestione_ContabileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60CFD271B2DBE0064DD2F /* Gestione_ContabileTests.swift */; };
+		79E60D08271B2DBE0064DD2F /* Gestione_ContabileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D07271B2DBE0064DD2F /* Gestione_ContabileUITests.swift */; };
+		79E60D0A271B2DBE0064DD2F /* Gestione_ContabileUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D09271B2DBE0064DD2F /* Gestione_ContabileUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79E60CFA271B2DBE0064DD2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79E60CDC271B2DBB0064DD2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79E60CE3271B2DBB0064DD2F;
+			remoteInfo = "Gestione Contabile";
+		};
+		79E60D04271B2DBE0064DD2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79E60CDC271B2DBB0064DD2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79E60CE3271B2DBB0064DD2F;
+			remoteInfo = "Gestione Contabile";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		79E60CE4271B2DBB0064DD2F /* Gestione Contabile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gestione Contabile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79E60CE7271B2DBB0064DD2F /* Gestione_ContabileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gestione_ContabileApp.swift; sourceTree = "<group>"; };
+		79E60CE9271B2DBB0064DD2F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		79E60CEB271B2DBE0064DD2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79E60CEE271B2DBE0064DD2F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		79E60CF0271B2DBE0064DD2F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		79E60CF3271B2DBE0064DD2F /* Gestione_Contabile.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gestione_Contabile.xcdatamodel; sourceTree = "<group>"; };
+		79E60CF9271B2DBE0064DD2F /* Gestione ContabileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gestione ContabileTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79E60CFD271B2DBE0064DD2F /* Gestione_ContabileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gestione_ContabileTests.swift; sourceTree = "<group>"; };
+		79E60D03271B2DBE0064DD2F /* Gestione ContabileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gestione ContabileUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79E60D07271B2DBE0064DD2F /* Gestione_ContabileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gestione_ContabileUITests.swift; sourceTree = "<group>"; };
+		79E60D09271B2DBE0064DD2F /* Gestione_ContabileUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gestione_ContabileUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79E60CE1271B2DBB0064DD2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E60CF6271B2DBE0064DD2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E60D00271B2DBE0064DD2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79E60CDB271B2DBB0064DD2F = {
+			isa = PBXGroup;
+			children = (
+				79E60CE6271B2DBB0064DD2F /* Gestione Contabile */,
+				79E60CFC271B2DBE0064DD2F /* Gestione ContabileTests */,
+				79E60D06271B2DBE0064DD2F /* Gestione ContabileUITests */,
+				79E60CE5271B2DBB0064DD2F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		79E60CE5271B2DBB0064DD2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79E60CE4271B2DBB0064DD2F /* Gestione Contabile.app */,
+				79E60CF9271B2DBE0064DD2F /* Gestione ContabileTests.xctest */,
+				79E60D03271B2DBE0064DD2F /* Gestione ContabileUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79E60CE6271B2DBB0064DD2F /* Gestione Contabile */ = {
+			isa = PBXGroup;
+			children = (
+				79E60CE7271B2DBB0064DD2F /* Gestione_ContabileApp.swift */,
+				79E60CE9271B2DBB0064DD2F /* ContentView.swift */,
+				79E60CEB271B2DBE0064DD2F /* Assets.xcassets */,
+				79E60CF0271B2DBE0064DD2F /* Persistence.swift */,
+				79E60CF2271B2DBE0064DD2F /* Gestione_Contabile.xcdatamodeld */,
+				79E60CED271B2DBE0064DD2F /* Preview Content */,
+			);
+			path = "Gestione Contabile";
+			sourceTree = "<group>";
+		};
+		79E60CED271B2DBE0064DD2F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				79E60CEE271B2DBE0064DD2F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		79E60CFC271B2DBE0064DD2F /* Gestione ContabileTests */ = {
+			isa = PBXGroup;
+			children = (
+				79E60CFD271B2DBE0064DD2F /* Gestione_ContabileTests.swift */,
+			);
+			path = "Gestione ContabileTests";
+			sourceTree = "<group>";
+		};
+		79E60D06271B2DBE0064DD2F /* Gestione ContabileUITests */ = {
+			isa = PBXGroup;
+			children = (
+				79E60D07271B2DBE0064DD2F /* Gestione_ContabileUITests.swift */,
+				79E60D09271B2DBE0064DD2F /* Gestione_ContabileUITestsLaunchTests.swift */,
+			);
+			path = "Gestione ContabileUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79E60CE3271B2DBB0064DD2F /* Gestione Contabile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79E60D0D271B2DBE0064DD2F /* Build configuration list for PBXNativeTarget "Gestione Contabile" */;
+			buildPhases = (
+				79E60CE0271B2DBB0064DD2F /* Sources */,
+				79E60CE1271B2DBB0064DD2F /* Frameworks */,
+				79E60CE2271B2DBB0064DD2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gestione Contabile";
+			productName = "Gestione Contabile";
+			productReference = 79E60CE4271B2DBB0064DD2F /* Gestione Contabile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		79E60CF8271B2DBE0064DD2F /* Gestione ContabileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79E60D10271B2DBE0064DD2F /* Build configuration list for PBXNativeTarget "Gestione ContabileTests" */;
+			buildPhases = (
+				79E60CF5271B2DBE0064DD2F /* Sources */,
+				79E60CF6271B2DBE0064DD2F /* Frameworks */,
+				79E60CF7271B2DBE0064DD2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79E60CFB271B2DBE0064DD2F /* PBXTargetDependency */,
+			);
+			name = "Gestione ContabileTests";
+			productName = "Gestione ContabileTests";
+			productReference = 79E60CF9271B2DBE0064DD2F /* Gestione ContabileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		79E60D02271B2DBE0064DD2F /* Gestione ContabileUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79E60D13271B2DBE0064DD2F /* Build configuration list for PBXNativeTarget "Gestione ContabileUITests" */;
+			buildPhases = (
+				79E60CFF271B2DBE0064DD2F /* Sources */,
+				79E60D00271B2DBE0064DD2F /* Frameworks */,
+				79E60D01271B2DBE0064DD2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79E60D05271B2DBE0064DD2F /* PBXTargetDependency */,
+			);
+			name = "Gestione ContabileUITests";
+			productName = "Gestione ContabileUITests";
+			productReference = 79E60D03271B2DBE0064DD2F /* Gestione ContabileUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79E60CDC271B2DBB0064DD2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					79E60CE3271B2DBB0064DD2F = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					79E60CF8271B2DBE0064DD2F = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 79E60CE3271B2DBB0064DD2F;
+					};
+					79E60D02271B2DBE0064DD2F = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 79E60CE3271B2DBB0064DD2F;
+					};
+				};
+			};
+			buildConfigurationList = 79E60CDF271B2DBB0064DD2F /* Build configuration list for PBXProject "Gestione Contabile" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 79E60CDB271B2DBB0064DD2F;
+			productRefGroup = 79E60CE5271B2DBB0064DD2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79E60CE3271B2DBB0064DD2F /* Gestione Contabile */,
+				79E60CF8271B2DBE0064DD2F /* Gestione ContabileTests */,
+				79E60D02271B2DBE0064DD2F /* Gestione ContabileUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79E60CE2271B2DBB0064DD2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E60CEF271B2DBE0064DD2F /* Preview Assets.xcassets in Resources */,
+				79E60CEC271B2DBE0064DD2F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E60CF7271B2DBE0064DD2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E60D01271B2DBE0064DD2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79E60CE0271B2DBB0064DD2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E60CF1271B2DBE0064DD2F /* Persistence.swift in Sources */,
+				79E60CF4271B2DBE0064DD2F /* Gestione_Contabile.xcdatamodeld in Sources */,
+				79E60CEA271B2DBB0064DD2F /* ContentView.swift in Sources */,
+				79E60CE8271B2DBB0064DD2F /* Gestione_ContabileApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E60CF5271B2DBE0064DD2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E60CFE271B2DBE0064DD2F /* Gestione_ContabileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E60CFF271B2DBE0064DD2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E60D0A271B2DBE0064DD2F /* Gestione_ContabileUITestsLaunchTests.swift in Sources */,
+				79E60D08271B2DBE0064DD2F /* Gestione_ContabileUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79E60CFB271B2DBE0064DD2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79E60CE3271B2DBB0064DD2F /* Gestione Contabile */;
+			targetProxy = 79E60CFA271B2DBE0064DD2F /* PBXContainerItemProxy */;
+		};
+		79E60D05271B2DBE0064DD2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79E60CE3271B2DBB0064DD2F /* Gestione Contabile */;
+			targetProxy = 79E60D04271B2DBE0064DD2F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		79E60D0B271B2DBE0064DD2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		79E60D0C271B2DBE0064DD2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79E60D0E271B2DBE0064DD2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Gestione Contabile/Preview Content\"";
+				DEVELOPMENT_TEAM = YY7XZ88R9G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.angelosannino.Gestione-Contabile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		79E60D0F271B2DBE0064DD2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Gestione Contabile/Preview Content\"";
+				DEVELOPMENT_TEAM = YY7XZ88R9G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.angelosannino.Gestione-Contabile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		79E60D11271B2DBE0064DD2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YY7XZ88R9G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.angelosannino.Gestione-ContabileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gestione Contabile.app/Gestione Contabile";
+			};
+			name = Debug;
+		};
+		79E60D12271B2DBE0064DD2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YY7XZ88R9G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.angelosannino.Gestione-ContabileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gestione Contabile.app/Gestione Contabile";
+			};
+			name = Release;
+		};
+		79E60D14271B2DBE0064DD2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YY7XZ88R9G;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.angelosannino.Gestione-ContabileUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Gestione Contabile";
+			};
+			name = Debug;
+		};
+		79E60D15271B2DBE0064DD2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YY7XZ88R9G;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.angelosannino.Gestione-ContabileUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Gestione Contabile";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79E60CDF271B2DBB0064DD2F /* Build configuration list for PBXProject "Gestione Contabile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E60D0B271B2DBE0064DD2F /* Debug */,
+				79E60D0C271B2DBE0064DD2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79E60D0D271B2DBE0064DD2F /* Build configuration list for PBXNativeTarget "Gestione Contabile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E60D0E271B2DBE0064DD2F /* Debug */,
+				79E60D0F271B2DBE0064DD2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79E60D10271B2DBE0064DD2F /* Build configuration list for PBXNativeTarget "Gestione ContabileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E60D11271B2DBE0064DD2F /* Debug */,
+				79E60D12271B2DBE0064DD2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79E60D13271B2DBE0064DD2F /* Build configuration list for PBXNativeTarget "Gestione ContabileUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E60D14271B2DBE0064DD2F /* Debug */,
+				79E60D15271B2DBE0064DD2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		79E60CF2271B2DBE0064DD2F /* Gestione_Contabile.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				79E60CF3271B2DBE0064DD2F /* Gestione_Contabile.xcdatamodel */,
+			);
+			currentVersion = 79E60CF3271B2DBE0064DD2F /* Gestione_Contabile.xcdatamodel */;
+			path = Gestione_Contabile.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 79E60CDC271B2DBB0064DD2F /* Project object */;
+}
