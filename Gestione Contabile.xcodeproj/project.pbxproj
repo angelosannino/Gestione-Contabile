@@ -21,6 +21,7 @@
 		79E60D28271B8D1D0064DD2F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D27271B8D1D0064DD2F /* Constants.swift */; };
 		79E60D2B271C14620064DD2F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D2A271C14620064DD2F /* Extensions.swift */; };
 		79E60D2F271C59990064DD2F /* GiobbyAPIServiceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D2E271C59990064DD2F /* GiobbyAPIServiceProtocols.swift */; };
+		79E60D32271C602A0064DD2F /* GiobbyAPIAccessTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D31271C602A0064DD2F /* GiobbyAPIAccessTokenResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		79E60D27271B8D1D0064DD2F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		79E60D2A271C14620064DD2F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		79E60D2E271C59990064DD2F /* GiobbyAPIServiceProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiobbyAPIServiceProtocols.swift; sourceTree = "<group>"; };
+		79E60D31271C602A0064DD2F /* GiobbyAPIAccessTokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiobbyAPIAccessTokenResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 		79E60D1A271B83940064DD2F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				79E60D30271C5FED0064DD2F /* API Response */,
 				79E60D24271B86790064DD2F /* Account Entry.swift */,
 			);
 			path = Models;
@@ -202,6 +205,14 @@
 				79E60D2A271C14620064DD2F /* Extensions.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		79E60D30271C5FED0064DD2F /* API Response */ = {
+			isa = PBXGroup;
+			children = (
+				79E60D31271C602A0064DD2F /* GiobbyAPIAccessTokenResponse.swift */,
+			);
+			path = "API Response";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,6 +354,7 @@
 				79E60D28271B8D1D0064DD2F /* Constants.swift in Sources */,
 				79E60CE8271B2DBB0064DD2F /* Gestione_ContabileApp.swift in Sources */,
 				79E60D25271B86790064DD2F /* Account Entry.swift in Sources */,
+				79E60D32271C602A0064DD2F /* GiobbyAPIAccessTokenResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
