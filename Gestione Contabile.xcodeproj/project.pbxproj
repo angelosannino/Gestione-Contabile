@@ -17,6 +17,9 @@
 		79E60D0A271B2DBE0064DD2F /* Gestione_ContabileUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D09271B2DBE0064DD2F /* Gestione_ContabileUITestsLaunchTests.swift */; };
 		79E60D17271B31940064DD2F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D16271B31940064DD2F /* MainView.swift */; };
 		79E60D23271B84240064DD2F /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D22271B84240064DD2F /* MainViewModel.swift */; };
+		79E60D25271B86790064DD2F /* Account Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D24271B86790064DD2F /* Account Entry.swift */; };
+		79E60D28271B8D1D0064DD2F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D27271B8D1D0064DD2F /* Constants.swift */; };
+		79E60D2B271C14620064DD2F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D2A271C14620064DD2F /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		79E60D09271B2DBE0064DD2F /* Gestione_ContabileUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gestione_ContabileUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		79E60D16271B31940064DD2F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		79E60D22271B84240064DD2F /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		79E60D24271B86790064DD2F /* Account Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account Entry.swift"; sourceTree = "<group>"; };
+		79E60D27271B8D1D0064DD2F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		79E60D2A271C14620064DD2F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,7 @@
 				79E60D1B271B83A00064DD2F /* Services */,
 				79E60D1D271B83BD0064DD2F /* Protocols */,
 				79E60D1C271B83A90064DD2F /* Core Data */,
+				79E60D26271B8D000064DD2F /* Helpers */,
 				79E60CEB271B2DBE0064DD2F /* Assets.xcassets */,
 				79E60CF2271B2DBE0064DD2F /* Gestione_Contabile.xcdatamodeld */,
 				79E60CED271B2DBE0064DD2F /* Preview Content */,
@@ -158,6 +165,7 @@
 		79E60D1A271B83940064DD2F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				79E60D24271B86790064DD2F /* Account Entry.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -182,6 +190,15 @@
 			children = (
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		79E60D26271B8D000064DD2F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				79E60D27271B8D1D0064DD2F /* Constants.swift */,
+				79E60D2A271C14620064DD2F /* Extensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,8 +334,11 @@
 				79E60D23271B84240064DD2F /* MainViewModel.swift in Sources */,
 				79E60CF1271B2DBE0064DD2F /* Persistence.swift in Sources */,
 				79E60D17271B31940064DD2F /* MainView.swift in Sources */,
+				79E60D2B271C14620064DD2F /* Extensions.swift in Sources */,
 				79E60CF4271B2DBE0064DD2F /* Gestione_Contabile.xcdatamodeld in Sources */,
+				79E60D28271B8D1D0064DD2F /* Constants.swift in Sources */,
 				79E60CE8271B2DBB0064DD2F /* Gestione_ContabileApp.swift in Sources */,
+				79E60D25271B86790064DD2F /* Account Entry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
