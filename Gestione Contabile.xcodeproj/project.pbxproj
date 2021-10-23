@@ -22,6 +22,9 @@
 		79E60D2B271C14620064DD2F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D2A271C14620064DD2F /* Extensions.swift */; };
 		79E60D2F271C59990064DD2F /* GiobbyAPIServiceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D2E271C59990064DD2F /* GiobbyAPIServiceProtocols.swift */; };
 		79E60D32271C602A0064DD2F /* GiobbyAPIAccessTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D31271C602A0064DD2F /* GiobbyAPIAccessTokenResponse.swift */; };
+		79E60D34271C71B00064DD2F /* GiobbyAuthorizationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D33271C71B00064DD2F /* GiobbyAuthorizationServiceTests.swift */; };
+		79E60D36271CC3810064DD2F /* GiobbyAuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D35271CC3810064DD2F /* GiobbyAuthorizationService.swift */; };
+		79E60D38271CC3B50064DD2F /* JWTDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D37271CC3B50064DD2F /* JWTDecoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,9 @@
 		79E60D2A271C14620064DD2F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		79E60D2E271C59990064DD2F /* GiobbyAPIServiceProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiobbyAPIServiceProtocols.swift; sourceTree = "<group>"; };
 		79E60D31271C602A0064DD2F /* GiobbyAPIAccessTokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiobbyAPIAccessTokenResponse.swift; sourceTree = "<group>"; };
+		79E60D33271C71B00064DD2F /* GiobbyAuthorizationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiobbyAuthorizationServiceTests.swift; sourceTree = "<group>"; };
+		79E60D35271CC3810064DD2F /* GiobbyAuthorizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiobbyAuthorizationService.swift; sourceTree = "<group>"; };
+		79E60D37271CC3B50064DD2F /* JWTDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTDecoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				79E60CFD271B2DBE0064DD2F /* Gestione_ContabileTests.swift */,
+				79E60D33271C71B00064DD2F /* GiobbyAuthorizationServiceTests.swift */,
 			);
 			path = "Gestione ContabileTests";
 			sourceTree = "<group>";
@@ -178,6 +185,8 @@
 		79E60D1B271B83A00064DD2F /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				79E60D35271CC3810064DD2F /* GiobbyAuthorizationService.swift */,
+				79E60D37271CC3B50064DD2F /* JWTDecoder.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -347,6 +356,7 @@
 			files = (
 				79E60D23271B84240064DD2F /* MainViewModel.swift in Sources */,
 				79E60D2F271C59990064DD2F /* GiobbyAPIServiceProtocols.swift in Sources */,
+				79E60D38271CC3B50064DD2F /* JWTDecoder.swift in Sources */,
 				79E60CF1271B2DBE0064DD2F /* Persistence.swift in Sources */,
 				79E60D17271B31940064DD2F /* MainView.swift in Sources */,
 				79E60D2B271C14620064DD2F /* Extensions.swift in Sources */,
@@ -354,6 +364,7 @@
 				79E60D28271B8D1D0064DD2F /* Constants.swift in Sources */,
 				79E60CE8271B2DBB0064DD2F /* Gestione_ContabileApp.swift in Sources */,
 				79E60D25271B86790064DD2F /* Account Entry.swift in Sources */,
+				79E60D36271CC3810064DD2F /* GiobbyAuthorizationService.swift in Sources */,
 				79E60D32271C602A0064DD2F /* GiobbyAPIAccessTokenResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79E60CFE271B2DBE0064DD2F /* Gestione_ContabileTests.swift in Sources */,
+				79E60D34271C71B00064DD2F /* GiobbyAuthorizationServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,7 +588,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YY7XZ88R9G;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -601,7 +613,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YY7XZ88R9G;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
