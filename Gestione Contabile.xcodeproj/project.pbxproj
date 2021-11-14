@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7957160827418ECE00FB12E1 /* Constants in Frameworks */ = {isa = PBXBuildFile; productRef = 7957160727418ECE00FB12E1 /* Constants */; };
+		7957160B27418F0700FB12E1 /* Extensions in Frameworks */ = {isa = PBXBuildFile; productRef = 7957160A27418F0700FB12E1 /* Extensions */; };
 		79E60CE8271B2DBB0064DD2F /* Gestione_ContabileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60CE7271B2DBB0064DD2F /* Gestione_ContabileApp.swift */; };
 		79E60CEC271B2DBE0064DD2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E60CEB271B2DBE0064DD2F /* Assets.xcassets */; };
 		79E60CEF271B2DBE0064DD2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E60CEE271B2DBE0064DD2F /* Preview Assets.xcassets */; };
@@ -18,8 +20,6 @@
 		79E60D17271B31940064DD2F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D16271B31940064DD2F /* MainView.swift */; };
 		79E60D23271B84240064DD2F /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D22271B84240064DD2F /* MainViewModel.swift */; };
 		79E60D25271B86790064DD2F /* Account Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D24271B86790064DD2F /* Account Entry.swift */; };
-		79E60D28271B8D1D0064DD2F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D27271B8D1D0064DD2F /* Constants.swift */; };
-		79E60D2B271C14620064DD2F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D2A271C14620064DD2F /* Extensions.swift */; };
 		79E60D2F271C59990064DD2F /* GiobbyAPIServiceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D2E271C59990064DD2F /* GiobbyAPIServiceProtocols.swift */; };
 		79E60D32271C602A0064DD2F /* GiobbyAPIAccessTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D31271C602A0064DD2F /* GiobbyAPIAccessTokenResponse.swift */; };
 		79E60D34271C71B00064DD2F /* GiobbyAuthorizationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D33271C71B00064DD2F /* GiobbyAuthorizationServiceTests.swift */; };
@@ -45,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7957160327418B9E00FB12E1 /* GiobbyAPI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GiobbyAPI; path = ../../Packages/GiobbyAPI; sourceTree = "<group>"; };
 		79E60CE4271B2DBB0064DD2F /* Gestione Contabile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gestione Contabile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E60CE7271B2DBB0064DD2F /* Gestione_ContabileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gestione_ContabileApp.swift; sourceTree = "<group>"; };
 		79E60CEB271B2DBE0064DD2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,8 +60,6 @@
 		79E60D16271B31940064DD2F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		79E60D22271B84240064DD2F /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		79E60D24271B86790064DD2F /* Account Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account Entry.swift"; sourceTree = "<group>"; };
-		79E60D27271B8D1D0064DD2F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		79E60D2A271C14620064DD2F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		79E60D2E271C59990064DD2F /* GiobbyAPIServiceProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiobbyAPIServiceProtocols.swift; sourceTree = "<group>"; };
 		79E60D31271C602A0064DD2F /* GiobbyAPIAccessTokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiobbyAPIAccessTokenResponse.swift; sourceTree = "<group>"; };
 		79E60D33271C71B00064DD2F /* GiobbyAuthorizationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiobbyAuthorizationServiceTests.swift; sourceTree = "<group>"; };
@@ -73,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7957160B27418F0700FB12E1 /* Extensions in Frameworks */,
+				7957160827418ECE00FB12E1 /* Constants in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,9 +94,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7957160227418B9E00FB12E1 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				7957160327418B9E00FB12E1 /* GiobbyAPI */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 		79E60CDB271B2DBB0064DD2F = {
 			isa = PBXGroup;
 			children = (
+				7957160227418B9E00FB12E1 /* Packages */,
 				79E60CE6271B2DBB0064DD2F /* Gestione Contabile */,
 				79E60CFC271B2DBE0064DD2F /* Gestione ContabileTests */,
 				79E60D06271B2DBE0064DD2F /* Gestione ContabileUITests */,
@@ -210,8 +220,6 @@
 		79E60D26271B8D000064DD2F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				79E60D27271B8D1D0064DD2F /* Constants.swift */,
-				79E60D2A271C14620064DD2F /* Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -240,6 +248,10 @@
 			dependencies = (
 			);
 			name = "Gestione Contabile";
+			packageProductDependencies = (
+				7957160727418ECE00FB12E1 /* Constants */,
+				7957160A27418F0700FB12E1 /* Extensions */,
+			);
 			productName = "Gestione Contabile";
 			productReference = 79E60CE4271B2DBB0064DD2F /* Gestione Contabile.app */;
 			productType = "com.apple.product-type.application";
@@ -312,6 +324,10 @@
 				Base,
 			);
 			mainGroup = 79E60CDB271B2DBB0064DD2F;
+			packageReferences = (
+				7957160627418ECE00FB12E1 /* XCRemoteSwiftPackageReference "Constants" */,
+				7957160927418F0700FB12E1 /* XCRemoteSwiftPackageReference "Extensions" */,
+			);
 			productRefGroup = 79E60CE5271B2DBB0064DD2F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -359,9 +375,7 @@
 				79E60D38271CC3B50064DD2F /* JWTDecoder.swift in Sources */,
 				79E60CF1271B2DBE0064DD2F /* Persistence.swift in Sources */,
 				79E60D17271B31940064DD2F /* MainView.swift in Sources */,
-				79E60D2B271C14620064DD2F /* Extensions.swift in Sources */,
 				79E60CF4271B2DBE0064DD2F /* Gestione_Contabile.xcdatamodeld in Sources */,
-				79E60D28271B8D1D0064DD2F /* Constants.swift in Sources */,
 				79E60CE8271B2DBB0064DD2F /* Gestione_ContabileApp.swift in Sources */,
 				79E60D25271B86790064DD2F /* Account Entry.swift in Sources */,
 				79E60D36271CC3810064DD2F /* GiobbyAuthorizationService.swift in Sources */,
@@ -715,6 +729,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7957160627418ECE00FB12E1 /* XCRemoteSwiftPackageReference "Constants" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/angelosannino/Constants";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+		7957160927418F0700FB12E1 /* XCRemoteSwiftPackageReference "Extensions" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/angelosannino/Extensions";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7957160727418ECE00FB12E1 /* Constants */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7957160627418ECE00FB12E1 /* XCRemoteSwiftPackageReference "Constants" */;
+			productName = Constants;
+		};
+		7957160A27418F0700FB12E1 /* Extensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7957160927418F0700FB12E1 /* XCRemoteSwiftPackageReference "Extensions" */;
+			productName = Extensions;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		79E60CF2271B2DBE0064DD2F /* Gestione_Contabile.xcdatamodeld */ = {

@@ -17,8 +17,8 @@ class AccountEntry: Decodable {
         self.isExpense = isExpense
     }
     
-    var amountToShow: String {
-        totalAmount.negative(isExpense).currencyString
-    }
+//    var amountToShow: String {
+//        totalAmount.negative(isExpense).currencyString
+//    }
     
 }
