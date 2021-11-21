@@ -20,11 +20,7 @@
 		79E60D17271B31940064DD2F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D16271B31940064DD2F /* MainView.swift */; };
 		79E60D23271B84240064DD2F /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D22271B84240064DD2F /* MainViewModel.swift */; };
 		79E60D25271B86790064DD2F /* Account Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D24271B86790064DD2F /* Account Entry.swift */; };
-		79E60D2F271C59990064DD2F /* GiobbyAPIServiceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D2E271C59990064DD2F /* GiobbyAPIServiceProtocols.swift */; };
-		79E60D32271C602A0064DD2F /* GiobbyAPIAccessTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D31271C602A0064DD2F /* GiobbyAPIAccessTokenResponse.swift */; };
 		79E60D34271C71B00064DD2F /* GiobbyAuthorizationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D33271C71B00064DD2F /* GiobbyAuthorizationServiceTests.swift */; };
-		79E60D36271CC3810064DD2F /* GiobbyAuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D35271CC3810064DD2F /* GiobbyAuthorizationService.swift */; };
-		79E60D38271CC3B50064DD2F /* JWTDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60D37271CC3B50064DD2F /* JWTDecoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,11 +56,7 @@
 		79E60D16271B31940064DD2F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		79E60D22271B84240064DD2F /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		79E60D24271B86790064DD2F /* Account Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account Entry.swift"; sourceTree = "<group>"; };
-		79E60D2E271C59990064DD2F /* GiobbyAPIServiceProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiobbyAPIServiceProtocols.swift; sourceTree = "<group>"; };
-		79E60D31271C602A0064DD2F /* GiobbyAPIAccessTokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiobbyAPIAccessTokenResponse.swift; sourceTree = "<group>"; };
 		79E60D33271C71B00064DD2F /* GiobbyAuthorizationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiobbyAuthorizationServiceTests.swift; sourceTree = "<group>"; };
-		79E60D35271CC3810064DD2F /* GiobbyAuthorizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiobbyAuthorizationService.swift; sourceTree = "<group>"; };
-		79E60D37271CC3B50064DD2F /* JWTDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTDecoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,7 +178,6 @@
 		79E60D1A271B83940064DD2F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				79E60D30271C5FED0064DD2F /* API Response */,
 				79E60D24271B86790064DD2F /* Account Entry.swift */,
 			);
 			path = Models;
@@ -195,8 +186,6 @@
 		79E60D1B271B83A00064DD2F /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				79E60D35271CC3810064DD2F /* GiobbyAuthorizationService.swift */,
-				79E60D37271CC3B50064DD2F /* JWTDecoder.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -212,7 +201,6 @@
 		79E60D1D271B83BD0064DD2F /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				79E60D2E271C59990064DD2F /* GiobbyAPIServiceProtocols.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -222,14 +210,6 @@
 			children = (
 			);
 			path = Helpers;
-			sourceTree = "<group>";
-		};
-		79E60D30271C5FED0064DD2F /* API Response */ = {
-			isa = PBXGroup;
-			children = (
-				79E60D31271C602A0064DD2F /* GiobbyAPIAccessTokenResponse.swift */,
-			);
-			path = "API Response";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,15 +351,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				79E60D23271B84240064DD2F /* MainViewModel.swift in Sources */,
-				79E60D2F271C59990064DD2F /* GiobbyAPIServiceProtocols.swift in Sources */,
-				79E60D38271CC3B50064DD2F /* JWTDecoder.swift in Sources */,
 				79E60CF1271B2DBE0064DD2F /* Persistence.swift in Sources */,
 				79E60D17271B31940064DD2F /* MainView.swift in Sources */,
 				79E60CF4271B2DBE0064DD2F /* Gestione_Contabile.xcdatamodeld in Sources */,
 				79E60CE8271B2DBB0064DD2F /* Gestione_ContabileApp.swift in Sources */,
 				79E60D25271B86790064DD2F /* Account Entry.swift in Sources */,
-				79E60D36271CC3810064DD2F /* GiobbyAuthorizationService.swift in Sources */,
-				79E60D32271C602A0064DD2F /* GiobbyAPIAccessTokenResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

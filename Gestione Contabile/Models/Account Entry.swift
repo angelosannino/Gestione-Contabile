@@ -1,4 +1,12 @@
 import Foundation
+import Extensions
+import Constants
+
+enum AccountType: String, Identifiable, Decodable {
+    var id: String { rawValue }
+    case income = "Income"
+    case expense = "Expense"
+}
 
 class AccountEntry: Decodable {
     
@@ -7,18 +15,18 @@ class AccountEntry: Decodable {
     let description: String
     let expiryDate: Date
     
-    let isExpense: Bool
+    let type: AccountType
     
-    init(id: Int, totalAmount: Double, description: String, expiryDate: Date, isExpense: Bool = true) {
+    init(id: Int, totalAmount: Double, description: String, expiryDate: Date, type: AccountType) {
         self.id = id
         self.totalAmount = totalAmount
         self.description = description
         self.expiryDate = expiryDate
-        self.isExpense = isExpense
+        self.type = type
     }
     
-//    var amountToShow: String {
-//        totalAmount.negative(isExpense).currencyString
-//    }
+    var amountToShow: String {
+        totalAmount.negative(when: type == .expense).currencyString
+    }
     
 }
