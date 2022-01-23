@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  Gestione Contabile
+
+  Created by Angelo Sannino on 06/01/22.
+  
+*/
+
+"MAINNAVTTL" = "Accounting";
+"INCM" = "Income";
+"EXPS" = "Expense";
+"FRCT" = "Forecast";
+"EXPD" = "Expected";
+"CNCT" = "Concrete";

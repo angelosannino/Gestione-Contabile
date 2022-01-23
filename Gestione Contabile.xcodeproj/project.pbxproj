@@ -7,8 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7957160827418ECE00FB12E1 /* Constants in Frameworks */ = {isa = PBXBuildFile; productRef = 7957160727418ECE00FB12E1 /* Constants */; };
-		7957160B27418F0700FB12E1 /* Extensions in Frameworks */ = {isa = PBXBuildFile; productRef = 7957160A27418F0700FB12E1 /* Extensions */; };
+		79470A162752F1D0006D4E9E /* AccessDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79470A152752F1D0006D4E9E /* AccessDetails.swift */; };
+		79470A1B2752F6F8006D4E9E /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79470A1A2752F6F8006D4E9E /* URLRequest.swift */; };
+		79470A1D2752F70A006D4E9E /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79470A1C2752F70A006D4E9E /* URLSession.swift */; };
+		79470A1F2752F72A006D4E9E /* OptionalString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79470A1E2752F72A006D4E9E /* OptionalString.swift */; };
+		79470A21275386B8006D4E9E /* APICalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79470A20275386B8006D4E9E /* APICalls.swift */; };
+		79470A2427538777006D4E9E /* GBAccessTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79470A2327538777006D4E9E /* GBAccessTokenResponse.swift */; };
+		79470A282753897A006D4E9E /* GBServiceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79470A272753897A006D4E9E /* GBServiceProtocols.swift */; };
+		79470A2C2753AE1C006D4E9E /* GBAuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79470A2B2753AE1C006D4E9E /* GBAuthorizationService.swift */; };
+		79470A2E2753AE2D006D4E9E /* GBServiceContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79470A2D2753AE2D006D4E9E /* GBServiceContext.swift */; };
+		79470A3027540396006D4E9E /* JWTDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79470A2F27540396006D4E9E /* JWTDecoder.swift */; };
+		79470A32275410D6006D4E9E /* GBEndpointResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79470A31275410D6006D4E9E /* GBEndpointResponse.swift */; };
+		795498FC27932EEE00160913 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795498FB27932EEE00160913 /* MainTabView.swift */; };
+		795498FE279334D400160913 /* Const+LocalizedKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795498FD279334D400160913 /* Const+LocalizedKeys.swift */; };
+		79549901279C6ECE00160913 /* AddEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79549900279C6ECE00160913 /* AddEntryView.swift */; };
+		79549903279C71FD00160913 /* SubjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79549902279C71FD00160913 /* SubjectViewModel.swift */; };
+		79549905279C72F600160913 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79549904279C72F600160913 /* CategoryViewModel.swift */; };
+		79724D0E277E83160009C72C /* GBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79724D0D277E83160009C72C /* GBService.swift */; };
+		79724D102780CC840009C72C /* Double+negative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79724D0F2780CC840009C72C /* Double+negative.swift */; };
+		79724D162780CDA90009C72C /* Double+currencyString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79724D152780CDA90009C72C /* Double+currencyString.swift */; };
+		79724D1B27811E6E0009C72C /* Calendar+weeks and months.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79724D1A27811E6E0009C72C /* Calendar+weeks and months.swift */; };
+		79724D1F278121D20009C72C /* WeeklyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79724D1E278121D20009C72C /* WeeklyView.swift */; };
+		79724D212781226A0009C72C /* MonthlyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79724D202781226A0009C72C /* MonthlyView.swift */; };
+		797E9BCD2752F0E8005B4C75 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797E9BCC2752F0E8005B4C75 /* Constants.swift */; };
+		799398392781A4920075CC04 /* AccountEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799398382781A4920075CC04 /* AccountEntryCell.swift */; };
+		7993983B2781A6A40075CC04 /* EntryCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7993983A2781A6A40075CC04 /* EntryCategory.swift */; };
+		7993983D2781A7470075CC04 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7993983C2781A7470075CC04 /* Subject.swift */; };
+		7993983F2781A7850075CC04 /* Recurrence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7993983E2781A7850075CC04 /* Recurrence.swift */; };
+		79A26D062787577E001F3E75 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79A26D082787577E001F3E75 /* Localizable.strings */; };
+		79A26D0B27875865001F3E75 /* Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A26D0A27875865001F3E75 /* Localized.swift */; };
 		79E60CE8271B2DBB0064DD2F /* Gestione_ContabileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E60CE7271B2DBB0064DD2F /* Gestione_ContabileApp.swift */; };
 		79E60CEC271B2DBE0064DD2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E60CEB271B2DBE0064DD2F /* Assets.xcassets */; };
 		79E60CEF271B2DBE0064DD2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E60CEE271B2DBE0064DD2F /* Preview Assets.xcassets */; };
@@ -41,7 +68,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7957160327418B9E00FB12E1 /* GiobbyAPI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GiobbyAPI; path = ../../Packages/GiobbyAPI; sourceTree = "<group>"; };
+		79470A152752F1D0006D4E9E /* AccessDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessDetails.swift; sourceTree = "<group>"; };
+		79470A1A2752F6F8006D4E9E /* URLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequest.swift; sourceTree = "<group>"; };
+		79470A1C2752F70A006D4E9E /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
+		79470A1E2752F72A006D4E9E /* OptionalString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalString.swift; sourceTree = "<group>"; };
+		79470A20275386B8006D4E9E /* APICalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICalls.swift; sourceTree = "<group>"; };
+		79470A2327538777006D4E9E /* GBAccessTokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBAccessTokenResponse.swift; sourceTree = "<group>"; };
+		79470A272753897A006D4E9E /* GBServiceProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBServiceProtocols.swift; sourceTree = "<group>"; };
+		79470A2B2753AE1C006D4E9E /* GBAuthorizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBAuthorizationService.swift; sourceTree = "<group>"; };
+		79470A2D2753AE2D006D4E9E /* GBServiceContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBServiceContext.swift; sourceTree = "<group>"; };
+		79470A2F27540396006D4E9E /* JWTDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTDecoder.swift; sourceTree = "<group>"; };
+		79470A31275410D6006D4E9E /* GBEndpointResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBEndpointResponse.swift; sourceTree = "<group>"; };
+		795498FB27932EEE00160913 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		795498FD279334D400160913 /* Const+LocalizedKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Const+LocalizedKeys.swift"; sourceTree = "<group>"; };
+		79549900279C6ECE00160913 /* AddEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEntryView.swift; sourceTree = "<group>"; };
+		79549902279C71FD00160913 /* SubjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectViewModel.swift; sourceTree = "<group>"; };
+		79549904279C72F600160913 /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
+		79724D0D277E83160009C72C /* GBService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBService.swift; sourceTree = "<group>"; };
+		79724D0F2780CC840009C72C /* Double+negative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+negative.swift"; sourceTree = "<group>"; };
+		79724D152780CDA90009C72C /* Double+currencyString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+currencyString.swift"; sourceTree = "<group>"; };
+		79724D1A27811E6E0009C72C /* Calendar+weeks and months.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+weeks and months.swift"; sourceTree = "<group>"; };
+		79724D1E278121D20009C72C /* WeeklyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyView.swift; sourceTree = "<group>"; };
+		79724D202781226A0009C72C /* MonthlyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyView.swift; sourceTree = "<group>"; };
+		797E9BCC2752F0E8005B4C75 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		799398382781A4920075CC04 /* AccountEntryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountEntryCell.swift; sourceTree = "<group>"; };
+		7993983A2781A6A40075CC04 /* EntryCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryCategory.swift; sourceTree = "<group>"; };
+		7993983C2781A7470075CC04 /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		7993983E2781A7850075CC04 /* Recurrence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recurrence.swift; sourceTree = "<group>"; };
+		79A26D072787577E001F3E75 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		79A26D0A27875865001F3E75 /* Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
 		79E60CE4271B2DBB0064DD2F /* Gestione Contabile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gestione Contabile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E60CE7271B2DBB0064DD2F /* Gestione_ContabileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gestione_ContabileApp.swift; sourceTree = "<group>"; };
 		79E60CEB271B2DBE0064DD2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,8 +119,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7957160B27418F0700FB12E1 /* Extensions in Frameworks */,
-				7957160827418ECE00FB12E1 /* Constants in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,18 +139,102 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7957160227418B9E00FB12E1 /* Packages */ = {
+		79470A132752F13C006D4E9E /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				7957160327418B9E00FB12E1 /* GiobbyAPI */,
+				79470A152752F1D0006D4E9E /* AccessDetails.swift */,
+				79470A20275386B8006D4E9E /* APICalls.swift */,
 			);
-			name = Packages;
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		79470A142752F14F006D4E9E /* GiobbyAPI */ = {
+			isa = PBXGroup;
+			children = (
+				79470A2227538737006D4E9E /* Models */,
+				79470A252753889C006D4E9E /* Protocols */,
+				79470A26275388A3006D4E9E /* Services */,
+				79470A172752F60C006D4E9E /* Helpers */,
+			);
+			path = GiobbyAPI;
+			sourceTree = "<group>";
+		};
+		79470A172752F60C006D4E9E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				79470A182752F616006D4E9E /* Utils */,
+				79470A132752F13C006D4E9E /* Constants */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		79470A182752F616006D4E9E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				79470A192752F61D006D4E9E /* Extensions */,
+				79470A2F27540396006D4E9E /* JWTDecoder.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		79470A192752F61D006D4E9E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				79470A1A2752F6F8006D4E9E /* URLRequest.swift */,
+				79470A1C2752F70A006D4E9E /* URLSession.swift */,
+				79470A1E2752F72A006D4E9E /* OptionalString.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		79470A2227538737006D4E9E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				79470A2327538777006D4E9E /* GBAccessTokenResponse.swift */,
+				79470A31275410D6006D4E9E /* GBEndpointResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		79470A252753889C006D4E9E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				79470A272753897A006D4E9E /* GBServiceProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		79470A26275388A3006D4E9E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				79470A2B2753AE1C006D4E9E /* GBAuthorizationService.swift */,
+				79724D0D277E83160009C72C /* GBService.swift */,
+				79470A2D2753AE2D006D4E9E /* GBServiceContext.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		79724D1927811E500009C72C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				79724D0F2780CC840009C72C /* Double+negative.swift */,
+				79724D1A27811E6E0009C72C /* Calendar+weeks and months.swift */,
+				79724D152780CDA90009C72C /* Double+currencyString.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		797E9BBB2752EDD3005B4C75 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				79470A142752F14F006D4E9E /* GiobbyAPI */,
+			);
+			path = Packages;
 			sourceTree = "<group>";
 		};
 		79E60CDB271B2DBB0064DD2F = {
 			isa = PBXGroup;
 			children = (
-				7957160227418B9E00FB12E1 /* Packages */,
 				79E60CE6271B2DBB0064DD2F /* Gestione Contabile */,
 				79E60CFC271B2DBE0064DD2F /* Gestione ContabileTests */,
 				79E60D06271B2DBE0064DD2F /* Gestione ContabileUITests */,
@@ -126,9 +263,11 @@
 				79E60D1D271B83BD0064DD2F /* Protocols */,
 				79E60D1C271B83A90064DD2F /* Core Data */,
 				79E60D26271B8D000064DD2F /* Helpers */,
+				797E9BBB2752EDD3005B4C75 /* Packages */,
 				79E60CEB271B2DBE0064DD2F /* Assets.xcassets */,
 				79E60CF2271B2DBE0064DD2F /* Gestione_Contabile.xcdatamodeld */,
 				79E60CED271B2DBE0064DD2F /* Preview Content */,
+				79A26D082787577E001F3E75 /* Localizable.strings */,
 			);
 			path = "Gestione Contabile";
 			sourceTree = "<group>";
@@ -162,7 +301,12 @@
 		79E60D18271B837C0064DD2F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				795498FB27932EEE00160913 /* MainTabView.swift */,
 				79E60D16271B31940064DD2F /* MainView.swift */,
+				79724D202781226A0009C72C /* MonthlyView.swift */,
+				799398382781A4920075CC04 /* AccountEntryCell.swift */,
+				79724D1E278121D20009C72C /* WeeklyView.swift */,
+				79549900279C6ECE00160913 /* AddEntryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -171,6 +315,8 @@
 			isa = PBXGroup;
 			children = (
 				79E60D22271B84240064DD2F /* MainViewModel.swift */,
+				79549902279C71FD00160913 /* SubjectViewModel.swift */,
+				79549904279C72F600160913 /* CategoryViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -178,6 +324,9 @@
 		79E60D1A271B83940064DD2F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7993983A2781A6A40075CC04 /* EntryCategory.swift */,
+				7993983C2781A7470075CC04 /* Subject.swift */,
+				7993983E2781A7850075CC04 /* Recurrence.swift */,
 				79E60D24271B86790064DD2F /* Account Entry.swift */,
 			);
 			path = Models;
@@ -208,6 +357,10 @@
 		79E60D26271B8D000064DD2F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				79724D1927811E500009C72C /* Utils */,
+				797E9BCC2752F0E8005B4C75 /* Constants.swift */,
+				795498FD279334D400160913 /* Const+LocalizedKeys.swift */,
+				79A26D0A27875865001F3E75 /* Localized.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -229,8 +382,6 @@
 			);
 			name = "Gestione Contabile";
 			packageProductDependencies = (
-				7957160727418ECE00FB12E1 /* Constants */,
-				7957160A27418F0700FB12E1 /* Extensions */,
 			);
 			productName = "Gestione Contabile";
 			productReference = 79E60CE4271B2DBB0064DD2F /* Gestione Contabile.app */;
@@ -301,12 +452,9 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
 			mainGroup = 79E60CDB271B2DBB0064DD2F;
 			packageReferences = (
-				7957160627418ECE00FB12E1 /* XCRemoteSwiftPackageReference "Constants" */,
-				7957160927418F0700FB12E1 /* XCRemoteSwiftPackageReference "Extensions" */,
 			);
 			productRefGroup = 79E60CE5271B2DBB0064DD2F /* Products */;
 			projectDirPath = "";
@@ -325,6 +473,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79E60CEF271B2DBE0064DD2F /* Preview Assets.xcassets in Resources */,
+				79A26D062787577E001F3E75 /* Localizable.strings in Resources */,
 				79E60CEC271B2DBE0064DD2F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,12 +499,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79470A2E2753AE2D006D4E9E /* GBServiceContext.swift in Sources */,
+				79724D1B27811E6E0009C72C /* Calendar+weeks and months.swift in Sources */,
+				79549903279C71FD00160913 /* SubjectViewModel.swift in Sources */,
 				79E60D23271B84240064DD2F /* MainViewModel.swift in Sources */,
+				79549901279C6ECE00160913 /* AddEntryView.swift in Sources */,
 				79E60CF1271B2DBE0064DD2F /* Persistence.swift in Sources */,
+				79724D0E277E83160009C72C /* GBService.swift in Sources */,
+				79470A2C2753AE1C006D4E9E /* GBAuthorizationService.swift in Sources */,
+				79724D102780CC840009C72C /* Double+negative.swift in Sources */,
+				7993983D2781A7470075CC04 /* Subject.swift in Sources */,
+				79470A282753897A006D4E9E /* GBServiceProtocols.swift in Sources */,
+				79724D212781226A0009C72C /* MonthlyView.swift in Sources */,
+				79470A21275386B8006D4E9E /* APICalls.swift in Sources */,
+				79A26D0B27875865001F3E75 /* Localized.swift in Sources */,
+				79470A1D2752F70A006D4E9E /* URLSession.swift in Sources */,
 				79E60D17271B31940064DD2F /* MainView.swift in Sources */,
 				79E60CF4271B2DBE0064DD2F /* Gestione_Contabile.xcdatamodeld in Sources */,
+				797E9BCD2752F0E8005B4C75 /* Constants.swift in Sources */,
+				79470A1F2752F72A006D4E9E /* OptionalString.swift in Sources */,
+				799398392781A4920075CC04 /* AccountEntryCell.swift in Sources */,
+				7993983F2781A7850075CC04 /* Recurrence.swift in Sources */,
 				79E60CE8271B2DBB0064DD2F /* Gestione_ContabileApp.swift in Sources */,
+				79470A1B2752F6F8006D4E9E /* URLRequest.swift in Sources */,
+				795498FE279334D400160913 /* Const+LocalizedKeys.swift in Sources */,
+				7993983B2781A6A40075CC04 /* EntryCategory.swift in Sources */,
+				79724D162780CDA90009C72C /* Double+currencyString.swift in Sources */,
+				79549905279C72F600160913 /* CategoryViewModel.swift in Sources */,
+				79470A162752F1D0006D4E9E /* AccessDetails.swift in Sources */,
+				79470A32275410D6006D4E9E /* GBEndpointResponse.swift in Sources */,
+				79470A2427538777006D4E9E /* GBAccessTokenResponse.swift in Sources */,
+				79470A3027540396006D4E9E /* JWTDecoder.swift in Sources */,
 				79E60D25271B86790064DD2F /* Account Entry.swift in Sources */,
+				79724D1F278121D20009C72C /* WeeklyView.swift in Sources */,
+				795498FC27932EEE00160913 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,11 +569,24 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		79A26D082787577E001F3E75 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79A26D072787577E001F3E75 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		79E60D0B271B2DBE0064DD2F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -458,6 +648,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -502,6 +694,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -512,6 +705,7 @@
 		79E60D0E271B2DBE0064DD2F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -542,6 +736,7 @@
 		79E60D0F271B2DBE0064DD2F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -705,38 +900,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		7957160627418ECE00FB12E1 /* XCRemoteSwiftPackageReference "Constants" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/angelosannino/Constants";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.0;
-			};
-		};
-		7957160927418F0700FB12E1 /* XCRemoteSwiftPackageReference "Extensions" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/angelosannino/Extensions";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		7957160727418ECE00FB12E1 /* Constants */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7957160627418ECE00FB12E1 /* XCRemoteSwiftPackageReference "Constants" */;
-			productName = Constants;
-		};
-		7957160A27418F0700FB12E1 /* Extensions */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7957160927418F0700FB12E1 /* XCRemoteSwiftPackageReference "Extensions" */;
-			productName = Extensions;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		79E60CF2271B2DBE0064DD2F /* Gestione_Contabile.xcdatamodeld */ = {
