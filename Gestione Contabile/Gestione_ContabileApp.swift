@@ -6,7 +6,7 @@ struct Gestione_ContabileApp: App {
 
     var body: some Scene {
         WindowGroup {
-            MainTabView()
+            CategoryView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

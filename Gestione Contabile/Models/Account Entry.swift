@@ -1,6 +1,13 @@
 import Foundation
 
 class AccountEntry: Identifiable, Codable {
+
+    enum CodingKeys: String, CodingKey {
+        case id = "id"
+        case number = "number"
+        case totalAmount = "totalAmount"
+    }
+
     var id = UUID()
     var number: Int
     var totalAmount: Double
@@ -12,9 +19,9 @@ class AccountEntry: Identifiable, Codable {
     var issueDate: Date
     var expiryDate: Date
     var paymentDate: Date?
-    
+
     var recurrence: Recurrence?
-        
+
     init(number: Int,
          totalAmount: Double,
          paid: Bool = false,
@@ -37,7 +44,22 @@ class AccountEntry: Identifiable, Codable {
         self.recurrence = recurrence
         self.paymentDate = expiryDate
     }
-    
+
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.id = try container.decode(UUID.self, forKey: .id)
+        self.number = try container.decode(Int.self, forKey: .number)
+        self.totalAmount = try container.decode(Double.self, forKey: .totalAmount)
+        self.paid = false
+        self.paidAmount = 0.0
+        self.description = ""
+        self.category = EntryCategory(context: PersistenceController.shared.container.viewContext)
+        self.subject = Subject.mock()
+        self.issueDate = Date()
+        self.expiryDate = Date()
+        self.recurrence = nil
+    }
+
     var computeAmount: Double {
         totalAmount.negative(when: category.entryType == .expense)
     }

@@ -1,7 +1,6 @@
 import CoreData
 
 struct PersistenceController {
-    
     static let shared = PersistenceController()
 
     let container: NSPersistentContainer
@@ -16,5 +15,27 @@ struct PersistenceController {
                 debugPrint(error.localizedDescription)
             }
         })
+    }
+}
+
+extension PersistenceController {
+    var context: NSManagedObjectContext {
+        container.viewContext
+    }
+
+    func fetch<T>(_ request: NSFetchRequest<T>) throws -> [T] where T : NSFetchRequestResult {
+        try container.viewContext.fetch(request)
+    }
+
+    func delete(_ object: NSManagedObject) {
+        container.viewContext.delete(object)
+    }
+
+    func save() {
+        do {
+            try container.viewContext.save()
+        } catch {
+            print(error.localizedDescription)
+        }
     }
 }

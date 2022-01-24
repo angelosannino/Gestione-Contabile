@@ -2,7 +2,7 @@ import Foundation
 
 public struct Constants {
 
-    public struct CommonStrings {
+    public enum CommonStrings {
         public static let emptyString = ""
     }
 

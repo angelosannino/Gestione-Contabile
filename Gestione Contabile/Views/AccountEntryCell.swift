@@ -6,13 +6,13 @@ struct AccountEntryCell: View {
     
     var body: some View {
         VStack {
-            Text(entry.category.name)
+            Text(entry.category.name ?? "")
                 .font(.headline)
             Divider()
             HStack(alignment: .top) {
                 VStack(alignment: .leading) {
                     Text(entry.description)
-                    Text("\(entry.subject.type.name): **\(entry.subject.name)**")
+                    Text("\(entry.subject.type?.getName ?? ""): **\(entry.subject.getName)**")
                 }
                 Spacer()
                 Text(entry.amountToShow)

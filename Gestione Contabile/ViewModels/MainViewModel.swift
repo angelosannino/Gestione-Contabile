@@ -6,8 +6,8 @@ class MainViewModel: ObservableObject {
     @Published var allEntries: [AccountEntry] = []
     @Published var currentMonth = DateInterval()
 
-    @Published var subjects: SubjectViewModel = SubjectViewModel()
-    @Published var categories: CategoryViewModel = CategoryViewModel()
+    @Published var subjects: SubjectModel = SubjectModel()
+    @Published var categories: CategoryModel = CategoryModel()
 
     init() {
         loadSampleData()
@@ -36,29 +36,58 @@ class MainViewModel: ObservableObject {
     }
 
     private func loadSampleData() {
-        let customer = SubjectType(name: "Cliente")
-        let supplier = SubjectType(name: "Fornitore")
-        let employee = SubjectType(name: "Impiegato")
+        let customer = SubjectType()
+        customer.id = UUID().uuidString
+        customer.name = "Cliente"
+        let supplier = SubjectType()
+        supplier.id = UUID().uuidString
+        supplier.name = "Fornitore"
+        let employee = SubjectType()
+        employee.id = UUID().uuidString
+        employee.name = "Implegato"
         
-        let cus1 = Subject(name: "IDEA MARE", type: customer)
-        let cus2 = Subject(name: "GAMAR", type: customer)
-        let supp1 = Subject(name: "LALIZAS", type: supplier)
-        let supp2 = Subject(name: "REPAINT", type: supplier)
-        let empl1 = Subject(name: "Alessia", type: employee)
-        let empl2 = Subject(name: "Nessa", type: employee)
+        let cus1 = Subject()
+        cus1.id = UUID().uuidString
+        cus1.name = "IDEA MARE"
+        cus1.type = customer
+        let cus2 = Subject()
+        cus2.id = UUID().uuidString
+        cus2.name = "GAMAR"
+        cus2.type = customer
+        let supp1 = Subject()
+        supp1.id = UUID().uuidString
+        supp1.name = "LALIZAS"
+        supp1.type = supplier
+        let supp2 = Subject()
+        supp2.id = UUID().uuidString
+        supp2.name = "REPAINT"
+        supp2.type = supplier
+        let empl1 = Subject()
+        empl1.id = UUID().uuidString
+        empl1.name = "Alessia"
+        empl1.type = employee
+        let empl2 = Subject()
+        empl2.id = UUID().uuidString
+        empl2.name = "Nessa"
+        empl2.type = employee
 
         subjects.types = [customer, supplier, employee]
         subjects.list = [cus1, cus2, supp1, supp2, empl1, empl2]
 
-        let purchInvoice = EntryCategory(name: "Fattura Acquisto",
-                                         entryType: .expense,
-                                         categoryType: .expected)
-        let saleInvoice = EntryCategory(name: "Fattura Vendita",
-                                        entryType: .income,
-                                        categoryType: .expected)
-        let salary = EntryCategory(name: "Salario",
-                                   entryType: .expense,
-                                   categoryType: .expected)
+        let purchInvoice = EntryCategory()
+        purchInvoice.name = "Fattura Acquisto"
+        purchInvoice.entryType = .expense
+        purchInvoice.categoryType = .expected
+        
+        let saleInvoice = EntryCategory()
+        saleInvoice.name = "Fattura Vendita"
+        saleInvoice.entryType = .income
+        saleInvoice.categoryType = .expected
+
+        let salary = EntryCategory()
+        salary.name = "Salario"
+        salary.entryType = .expense
+        salary.categoryType = .expected
 
         categories.list = [purchInvoice, saleInvoice, salary]
 
