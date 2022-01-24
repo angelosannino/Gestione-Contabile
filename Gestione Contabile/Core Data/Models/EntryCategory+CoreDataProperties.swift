@@ -18,6 +18,17 @@ extension EntryCategory {
 }
 
 extension EntryCategory {
+    func exists() -> Bool {
+        do {
+            return try !PersistenceController.shared.fetch(EntryCategory.fetchRequest().byId(getId)).isEmpty
+        } catch {
+            debugPrint(error.localizedDescription)
+            return false
+        }
+    }
+}
+
+extension EntryCategory {
     static func mock(name: String = "Sample Category",
                      entryType: EntryType = .expense,
                      categoryType: CategoryType = .concrete) -> EntryCategory {

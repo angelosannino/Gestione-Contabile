@@ -24,11 +24,8 @@ extension Subject {
 
 extension Subject {
     func exists() -> Bool {
-        let request = Subject.fetchRequest()
-        let predicate = NSPredicate(format: "id == %@", getId)
-        request.predicate = predicate
         do {
-            return try PersistenceController.shared.context.fetch(request).isEmpty
+            return try !PersistenceController.shared.fetch(Subject.fetchRequest().byId(getId)).isEmpty
         } catch {
             debugPrint(error.localizedDescription)
             return false

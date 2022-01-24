@@ -14,10 +14,8 @@ class CategoryModel: ObservableObject {
     }
 
     func update(id: String, name: String, entryType: EntryType, categoryType: CategoryType) {
-        let request = EntryCategory.fetchRequest()
-        request.predicate = NSPredicate(format: "id == %@", id)
         do {
-            guard let category = try PersistenceController.shared.fetch(request)
+            guard let category = try PersistenceController.shared.fetch(EntryCategory.fetchRequest().byId(id))
                     .first else { return }
             category.name = name
             category.entryType = entryType
@@ -29,15 +27,9 @@ class CategoryModel: ObservableObject {
     }
 
     func delete(_ category: EntryCategory) {
-        let request = EntryCategory.fetchRequest()
-        request.predicate = NSPredicate(format: "id == %@", category.getId)
-        do {
-            guard try !PersistenceController.shared.fetch(request).isEmpty else { return }
-            PersistenceController.shared.delete(category)
-            PersistenceController.shared.save()
-        } catch {
-            debugPrint(error.localizedDescription)
-        }
+        guard category.exists() else { return }
+        PersistenceController.shared.delete(category)
+        PersistenceController.shared.save()
     }
 
     static func sample() -> CategoryModel {

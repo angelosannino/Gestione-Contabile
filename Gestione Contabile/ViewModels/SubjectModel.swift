@@ -13,11 +13,8 @@ class SubjectModel: ObservableObject {
     }
 
     func update(id: String, name: String, type: SubjectType) {
-        let request = Subject.fetchRequest()
-        let predicate = NSPredicate(format: "id == %@", id)
-        request.predicate = predicate
         do {
-            guard let subject = try PersistenceController.shared.fetch(request)
+            guard let subject = try PersistenceController.shared.fetch(Subject.fetchRequest().byId(id))
                     .first else { return }
             subject.name = name
             subject.type = type
@@ -40,9 +37,10 @@ class SubjectModel: ObservableObject {
         PersistenceController.shared.save()
     }
 
-    func editType(id: String, name: String) {
+    func updateType(id: String, name: String) {
         do {
-            guard let type = try PersistenceController.shared.fetch(SubjectType.by(id)).first else { return }
+            guard let type = try PersistenceController.shared.fetch(SubjectType.fetchRequest().byId(id))
+                    .first else { return }
             type.name = name
             PersistenceController.shared.save()
         } catch {

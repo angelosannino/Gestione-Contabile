@@ -30,6 +30,7 @@
 		795499C8279DD61100160913 /* Subject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795499C4279DD61100160913 /* Subject+CoreDataProperties.swift */; };
 		795499C9279DD61100160913 /* SubjectType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795499C5279DD61100160913 /* SubjectType+CoreDataClass.swift */; };
 		795499CA279DD61100160913 /* SubjectType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795499C6279DD61100160913 /* SubjectType+CoreDataProperties.swift */; };
+		795499CC279F2E1700160913 /* FetchRequest+byId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795499CB279F2E1700160913 /* FetchRequest+byId.swift */; };
 		79724D0E277E83160009C72C /* GBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79724D0D277E83160009C72C /* GBService.swift */; };
 		79724D102780CC840009C72C /* Double+negative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79724D0F2780CC840009C72C /* Double+negative.swift */; };
 		79724D162780CDA90009C72C /* Double+currencyString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79724D152780CDA90009C72C /* Double+currencyString.swift */; };
@@ -97,6 +98,7 @@
 		795499C4279DD61100160913 /* Subject+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Subject+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		795499C5279DD61100160913 /* SubjectType+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SubjectType+CoreDataClass.swift"; sourceTree = "<group>"; };
 		795499C6279DD61100160913 /* SubjectType+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SubjectType+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		795499CB279F2E1700160913 /* FetchRequest+byId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FetchRequest+byId.swift"; sourceTree = "<group>"; };
 		79724D0D277E83160009C72C /* GBService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBService.swift; sourceTree = "<group>"; };
 		79724D0F2780CC840009C72C /* Double+negative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+negative.swift"; sourceTree = "<group>"; };
 		79724D152780CDA90009C72C /* Double+currencyString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+currencyString.swift"; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				79470A1E2752F72A006D4E9E /* Optional+String.swift */,
+				795499CB279F2E1700160913 /* FetchRequest+byId.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -556,6 +559,7 @@
 				79470A1F2752F72A006D4E9E /* Optional+String.swift in Sources */,
 				799398392781A4920075CC04 /* AccountEntryCell.swift in Sources */,
 				7993983F2781A7850075CC04 /* Recurrence.swift in Sources */,
+				795499CC279F2E1700160913 /* FetchRequest+byId.swift in Sources */,
 				795499BD279D8A0D00160913 /* EntryCategory+CoreDataClass.swift in Sources */,
 				79E60CE8271B2DBB0064DD2F /* Gestione_ContabileApp.swift in Sources */,
 				795499C8279DD61100160913 /* Subject+CoreDataProperties.swift in Sources */,

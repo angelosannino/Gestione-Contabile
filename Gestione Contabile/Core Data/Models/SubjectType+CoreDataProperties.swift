@@ -30,16 +30,9 @@ extension SubjectType {
 }
 
 extension SubjectType {
-    public static func by(_ id: String) -> NSFetchRequest<SubjectType> {
-        let request = SubjectType.fetchRequest()
-        let predicate = NSPredicate(format: "id == %@", id)
-        request.predicate = predicate
-        return request
-    }
-
     func exists() -> Bool {
         do {
-            return try PersistenceController.shared.fetch(SubjectType.by(getId)).isEmpty
+            return try !PersistenceController.shared.fetch(SubjectType.fetchRequest().byId(getId)).isEmpty
         } catch {
             debugPrint(error.localizedDescription)
             return false
